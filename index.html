@@ -1486,6 +1486,23 @@
             right: 20px;
             /* slide into view */
         }
+
+        .clickable-card {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .clickable-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .clickable-card h4,
+        .clickable-card p {
+            color: inherit;
+        }
     </style>
 </head>
 
@@ -2342,27 +2359,35 @@
                 </div>
 
                 <div class="contact-info-aside fade-up" style="transition-delay:.15s">
-                    <div class="info-card">
+
+                    <!-- Call -->
+                    <a href="tel:9492200037" class="info-card clickable-card">
                         <div class="info-card-icon">📞</div>
                         <div>
                             <h4>Call Us</h4>
-                            <a href="tel:9492200037">+91 94922 00037</a>
+                            <p>+91 94922 00037</p>
                         </div>
-                    </div>
-                    <div class="info-card">
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:neelimaicecream@gmail.com" class="info-card clickable-card">
                         <div class="info-card-icon">📧</div>
                         <div>
                             <h4>Email Us</h4>
-                            <a href="mailto:neelimaicecream@gmail.com">NeelimaIceCream@gmail.com</a>
+                            <p>neelimaicecream@gmail.com</p>
                         </div>
-                    </div>
-                    <div class="info-card">
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/9492200037" target="_blank" class="info-card clickable-card">
                         <div class="info-card-icon">💬</div>
                         <div>
                             <h4>WhatsApp</h4>
-                            <a href="https://wa.me/9492200037" target="_blank">Chat on WhatsApp →</a>
+                            <p>Chat on WhatsApp →</p>
                         </div>
-                    </div>
+                    </a>
+
+                    <!-- Open Hours -->
                     <div class="info-card">
                         <div class="info-card-icon">⏰</div>
                         <div>
@@ -2370,8 +2395,9 @@
                             <p>Every Day: 10:00 AM – 10:00 PM</p>
                         </div>
                     </div>
+
+                    <!-- Party -->
                     <div class="info-card" style="background:var(--blush); border-color:var(--peach)">
-                        <!-- pale gold highlight card — logo gold tones -->
                         <div class="info-card-icon" style="background:white">🎉</div>
                         <div>
                             <h4>Planning a Party?</h4>
@@ -2379,6 +2405,7 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
